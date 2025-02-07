@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Sprawdzanie typów TypeScript..."
+pnpm tsc --noEmit -p tsconfig.app.json
+
+if [ $? -ne 0 ]; then
+  echo "❌ Błąd typów TypeScript! Zatrzymuję commit."
+  exit 1
+fi
+
+echo "✅ Typy są poprawne, uruchamiam lint-staged..."
+pnpm lint-staged
