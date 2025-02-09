@@ -25,7 +25,12 @@
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["src/*"],
-			"@App/*": ["src/App/*"],
+			"@Stopwatch/*": ["src/Stopwatch/*"],
+			"@StopwatchButton/*": ["src/StopwatchButton/*"],
+			"@TimerDisplay/*": ["src/TimerDisplay/*"],
+			"@LapTable/*": ["src/LapTable/*"],
+			"@LapRow/*": ["src/LapRow/*"],
+			"@Summary/*": ["src/Summary/*"],
 			"@Container/*": ["src/Container/*"]
 		}
 	},

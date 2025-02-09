@@ -11,7 +11,12 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
-      '@App': path.resolve(__dirname, 'src/App'),
+      '@Stopwatch': path.resolve(__dirname, 'src/Stopwatch'),
+      '@StopwatchButton': path.resolve(__dirname, 'src/StopwatchButton'),
+      '@TimerDisplay': path.resolve(__dirname, 'src/TimerDisplay'),
+      '@LapTable': path.resolve(__dirname, 'src/LapTable'),
+      '@LapRow': path.resolve(__dirname, 'src/LapRow'),
+      '@Summary': path.resolve(__dirname, 'src/Summary'),
       '@Container': path.resolve(__dirname, 'src/Container'),
     },
   },

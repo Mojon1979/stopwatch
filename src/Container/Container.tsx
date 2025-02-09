@@ -7,9 +7,14 @@ const Container = ({ children, title }: Props) => {
 		<div
 			style={{
 				width: 800,
+				height: 500,
 				margin: '0 auto',
 				padding: 20,
 				textAlign: 'center',
+				display: 'flex',
+				flexDirection: 'column',
+				alignItems: 'center',
+				justifyContent: 'space-between',
 			}}
 		>
 			<h1>{title}</h1>
